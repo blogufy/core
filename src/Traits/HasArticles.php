@@ -1,7 +1,7 @@
 <?php
-namespace PySosu\Blogufy\Traits;
+namespace Blogufy\Core\Traits;
 
-use PySosu\Blogufy\Models\Article;
+use Blogufy\Core\Models\Article;
 
 trait HasArticles
 {

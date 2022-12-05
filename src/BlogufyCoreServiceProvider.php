@@ -1,15 +1,17 @@
 <?php
-namespace PySosu\Blogufy;
+namespace Blogufy\Core;
 
+use Blogufy\Core\Interfaces\Crudable;
+use Blogufy\Core\Repositories\ArticleRepository;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
-class BlogufyServiceProvider extends ServiceProvider
+class BlogufyCoreServiceProvider extends ServiceProvider
 {
     
     public function register()
     {
-        
+        // $this->app->bind(Crudable::class, ArticleRepository::class);
     }
 
     public function boot()
@@ -20,7 +22,7 @@ class BlogufyServiceProvider extends ServiceProvider
         // configurations
         if($this->app->runningInConsole()){
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('blogufy.php')
+                __DIR__.'/../config/config.php' => config_path('blogufy_core.php')
             ]);
         }
 
@@ -39,8 +41,8 @@ class BlogufyServiceProvider extends ServiceProvider
     protected function routeConfiguration()
     {
         return [
-            'prefix' => config('blogufy.prefix'),
-            'middleware' => config('blogufy.middleware')
+            'prefix' => config('blogufy_core.prefix'),
+            'middleware' => config('blogufy_core.middleware')
         ];
     }
 

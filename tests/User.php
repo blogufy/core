@@ -1,9 +1,9 @@
 <?php
-namespace PySosu\Blogufy\Tests;
+namespace Blogufy\Core\Tests;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as AuthUser;
-use PySosu\Blogufy\Traits\HasArticles;
+use Blogufy\Core\Traits\HasArticles;
 
 class User extends AuthUser
 {

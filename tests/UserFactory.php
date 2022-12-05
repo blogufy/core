@@ -1,6 +1,6 @@
 <?php
 
-namespace PySosu\Blogufy\Tests;
+namespace Blogufy\Core\Tests;
 
 use Illuminate\Support\Str;
 use Orchestra\Testbench\Factories\UserFactory as FactoriesUserFactory;

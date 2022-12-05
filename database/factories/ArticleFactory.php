@@ -1,9 +1,9 @@
 <?php
-namespace PySosu\Blogufy\Database\Factories;
+namespace Blogufy\Core\Database\Factories;
 
 
 use Illuminate\Support\Str;
-use PySosu\Blogufy\Models\Article;
+use Blogufy\Core\Models\Article;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ArticleFactory extends Factory

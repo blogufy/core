@@ -1,8 +1,8 @@
 <?php
-namespace PySosu\Blogufy\Tests;
+namespace Blogufy\Core\Tests;
 
 use Orchestra\Testbench\TestCase as TestbenchTestCase;
-use PySosu\Blogufy\BlogufyServiceProvider;
+use Blogufy\Core\BlogufyCoreServiceProvider;
 
 class TestCase extends TestbenchTestCase
 {
@@ -24,7 +24,7 @@ class TestCase extends TestbenchTestCase
     public function getPackageProviders($app)
     {
         return [
-            BlogufyServiceProvider::class,
+            BlogufyCoreServiceProvider::class,
         ];
     }
 

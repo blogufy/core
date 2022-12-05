@@ -1,11 +1,11 @@
 <?php
 
-namespace PySosu\Blogufy\Tests\Unit;
+namespace Blogufy\Core\Tests\Unit;
 
 use Illuminate\Support\Str;
-use PySosu\Blogufy\Tests\User;
-use PySosu\Blogufy\Models\Article;
-use PySosu\Blogufy\Tests\TestCase;
+use Blogufy\Core\Tests\User;
+use Blogufy\Core\Models\Article;
+use Blogufy\Core\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ArticleTest extends TestCase

@@ -1,35 +1,28 @@
 <?php
 namespace Blogufy\Core\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Blogufy\Core\Database\Factories\ArticleFactory;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Article extends Model
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Blogufy\Core\Database\Factories\CategoryFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Category extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected static function newFactory()
     {
-        return ArticleFactory::new();
+        return CategoryFactory::new();
     }
 
     protected $fillable = [
-        'category_id',
         'author_id',
         'author_type',
-        'title',
+        'name',
         'slug',
-        'body',
         'description',
-        'image',
         'status',
-        'views',
-        'click',
-        'like',
-        'dislike',
-        'share',
     ];
 
     // relationships
@@ -38,8 +31,8 @@ class Article extends Model
         return $this->morphTo();
     }
 
-    public function category()
+    public function articles()
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Article::class);
     }
 }
