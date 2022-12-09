@@ -1,8 +1,6 @@
 <?php
 namespace Blogufy\Core;
 
-use Blogufy\Core\Interfaces\Crudable;
-use Blogufy\Core\Repositories\ArticleRepository;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
