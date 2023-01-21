@@ -17,6 +17,7 @@ class Article extends Model
 
     protected $fillable = [
         'category_id',
+        'tag_id',
         'author_id',
         'author_type',
         'title',
@@ -41,5 +42,15 @@ class Article extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function tag()
+    {
+        return $this->belongsTo(Tag::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 }

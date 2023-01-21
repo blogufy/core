@@ -23,17 +23,7 @@ class BlogufyCoreServiceProvider extends ServiceProvider
                 __DIR__.'/../config/config.php' => config_path('blogufy_core.php')
             ]);
         }
-
-        // routes
-        $this->registerRoutes();
         
-    }
-
-    protected function registerRoutes()
-    {
-        Route::group($this->routeConfiguration(), function(){
-            $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
-        });
     }
 
     protected function routeConfiguration()

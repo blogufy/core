@@ -2,13 +2,13 @@
 namespace Blogufy\Core\Database\Factories;
 
 use Illuminate\Support\Str;
-use Blogufy\Core\Models\Category;
+use Blogufy\Core\Models\Tag;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class CategoryFactory extends Factory
+class TagFactory extends Factory
 {
-    protected $model = Category::class;
+    protected $model = Tag::class;
 
     public function definition() 
     { 

@@ -1,0 +1,27 @@
+preset: package
+
+namespace: Blogufy\Core
+user-auth-provider: App\Models\User
+
+paths:
+  src: src
+  resource: resources
+
+factory:
+  path: database/factories
+
+migration:
+  path: database/migrations
+  prefix: ''
+
+console:
+  namespace: Blogufy\Core\Console
+
+model:
+  namespace: Blogufy\Core\Models
+
+provider:
+  namespace: Blogufy\Core\Providers
+
+testing:
+  namespace: Blogufy\Core\Tests

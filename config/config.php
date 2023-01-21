@@ -7,6 +7,9 @@ return [
      */
     'articles_table' => 'articles',
 
+    /** how many articles to create when using ArticleSeeder */
+    'seed_count' => '',
+
     /**
      * Table/ Model IDs
      * Determine if your auto-incrementing ID should be the standard numeric
