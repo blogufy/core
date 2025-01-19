@@ -15,11 +15,9 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('article_id');
-            $table->foreignId('author_id');
-            $table->string('author_type');
             $table->text('comment');
             $table->string('status')->default('pending');
+            $table->string('note')->nullable();
             $table->integer('vote')->default(0);
             $table->timestamps();
         });

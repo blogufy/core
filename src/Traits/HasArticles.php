@@ -9,4 +9,4 @@ trait HasArticles
     {
         return $this->morphMany(Article::class, 'author');
     }
-} 
+}

@@ -16,9 +16,6 @@ class Comment extends Model
     }
 
     protected $fillable = [
-        'article_id',
-        'author_id',
-        'author_type',
         'comment',
         'status',
         'vote'

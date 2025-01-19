@@ -1,6 +1,6 @@
 {
     "name": "blogufy/core",
-    "description": "This is the core of the blogufy package without CRUD implementation but comes with all the necessary backend logic and settings such as models. migrations, services, helper functions, etc. Built ontop of Laravel.",
+    "description": "This is the core of the blogufy project/application without CRUD implementation but comes with all the necessary backend logic and settings such as models. migrations, services, helper functions, etc. Built on Laravel.",
     "type": "library",
     "license": "MIT",
     "authors": [

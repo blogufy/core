@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->nullable();
-            $table->foreignId('tag_id')->nullable();
             $table->foreignId('author_id');
             $table->string('author_type');
             $table->string('title')->unique()->index();
